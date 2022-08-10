@@ -1,0 +1,58 @@
+footer {
+  background: linear-gradient(270deg, #4e2379 0%, #280f44 100%), #c4c4c4;
+  height: 669px;
+  .conteudo-footer {
+    color: white;
+    a {
+      color: white;
+      display: block;
+    }
+    .titulo-footer {
+      gap: 25px;
+    }
+  }
+  .politicas {
+    .politicas-item {
+      gap: 9px;
+      a {
+        color: white;
+      }
+      span {
+        background-color: white;
+        width: 19px;
+        height: 2px;
+        display: block;
+      }
+    }
+  }
+  .direitos {
+    color: $lilas;
+    gap: 27px;
+    p {
+
+    }
+  }
+  .conteudo-fim {
+    padding-top: 150px;
+  }
+  .voltar-topo {
+    height: 60px;
+    background-color: $roxo-escuro;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    a {
+      gap: 12px;
+      color: white;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 991.9px) {
+  
+}

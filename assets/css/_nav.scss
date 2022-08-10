@@ -1,0 +1,38 @@
+nav {
+  background: linear-gradient(270deg, #4E2379 0%, #280F44 100%), #C4C4C4;
+  height: 90px;
+  .links-nav {
+    a {
+      color: white;
+      padding: 28px 30px 33px 30px;
+      border-top: 4px solid transparent;
+      &:hover {
+        border-top: 4px solid $vermelho;
+      }
+    }
+  }
+  .menu {
+    color: white;
+    gap: 10px;
+    .burgir {
+      height: 24px;
+      position: relative;
+      span {
+        height: 4px;
+        width: 58px;
+        background-color: $vermelho;
+        display: block;
+        position: absolute;
+      }
+      .top {
+        top: 0;
+      }
+      .mid {
+        top: 10px;
+      }
+      .bot {
+        bottom: 0;
+      }
+    }
+  }
+}
