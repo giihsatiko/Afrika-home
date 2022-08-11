@@ -1,47 +1,44 @@
 footer {
   background: linear-gradient(270deg, #4e2379 0%, #280f44 100%), #c4c4c4;
-  height: 669px;
-  .conteudo-footer {
-    color: white;
-    a {
+  .footer-container {
+    min-height: 669px;
+    .conteudo-footer {
       color: white;
-      display: block;
-    }
-    .titulo-footer {
-      gap: 25px;
-    }
-  }
-  .politicas {
-    .politicas-item {
-      gap: 9px;
       a {
         color: white;
-      }
-      span {
-        background-color: white;
-        width: 19px;
-        height: 2px;
         display: block;
       }
+      .titulo-footer {
+        gap: 25px;
+      }
     }
-  }
-  .direitos {
-    color: $lilas;
-    gap: 27px;
-    p {
-
+    .politicas {
+      .politicas-item {
+        gap: 9px;
+        a {
+          color: white;
+        }
+        span {
+          background-color: white;
+          width: 19px;
+          height: 2px;
+          display: block;
+        }
+      }
     }
-  }
-  .conteudo-fim {
-    padding-top: 150px;
+    .direitos {
+      color: $lilas;
+      gap: 27px;
+      p {
+      }
+    }
+    .conteudo-fim {
+      padding-top: 150px;
+    }
   }
   .voltar-topo {
     height: 60px;
     background-color: $roxo-escuro;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     a {
       gap: 12px;
       color: white;
@@ -52,7 +49,49 @@ footer {
   }
 }
 
-
 @media (max-width: 991.9px) {
+  .footer-container {
+    padding: 0 30px;
+    .row {
+      padding-top: 124px;
+    }
+    .conteudo-footer {
+      padding-bottom: 30px;
+      .titulo-footer {
   
+      }
+      .link-footer {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    .direitos {
+      gap: 55px !important;
+    }
+    .conteudo-fim {
+      .politicas {
+        order: -1;
+        padding-bottom: 68px;
+      }
+    }
+  }
+
+}
+
+
+@media(max-width: 575.9px) {
+  .politicas {
+    
+  }
+  .direitos {
+    p {
+      margin: 0;
+    }
+  }
+  .logo-menor {
+    order: 1;
+    padding-bottom: 39px;
+    padding-top: 47px;
+  }
 }

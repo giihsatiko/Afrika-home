@@ -1,13 +1,38 @@
-nav {
-  background: linear-gradient(270deg, #4E2379 0%, #280F44 100%), #C4C4C4;
+header {
+  background: linear-gradient(270deg, #4e2379 0%, #280f44 100%), #c4c4c4;
   height: 90px;
   .links-nav {
     a {
       color: white;
-      padding: 28px 30px 33px 30px;
+      padding: 28px calc(7.6vw - 61px) 33px;
       border-top: 4px solid transparent;
       &:hover {
         border-top: 4px solid $vermelho;
+      }
+    }
+    .dropdown-nav {
+      .links-dropdown {
+        display: none;
+        min-height: 441px;
+        position: absolute;
+        background: linear-gradient(270deg, #4e2379 0%, #280f44 100%), #c4c4c4;
+        box-shadow: 0px 4px 200px rgba(78, 35, 121, 0.2);
+        left: 0;
+        top: 90px;
+        width: 100%;
+        padding: 0 40px;
+        h3 {
+          padding-bottom: 15px;
+          color: white;
+        }
+        a {
+          padding: 0;
+          font-size: 16;
+          font-weight: 300;
+        }
+        div {
+          padding-top: 90px;
+        }
       }
     }
   }
@@ -16,22 +41,74 @@ nav {
     gap: 10px;
     .burgir {
       height: 24px;
+      width: 58px;
       position: relative;
       span {
         height: 4px;
-        width: 58px;
+        width: 100%;
         background-color: $vermelho;
         display: block;
         position: absolute;
       }
       .top {
         top: 0;
+        transition: all 0.8s ease-in-out;
       }
       .mid {
         top: 10px;
+        transition: all 1s ease-in-out;
       }
       .bot {
         bottom: 0;
+        transition: all 0.8s ease-in-out;
+      }
+      &.menu-aberto {
+        .top {
+          transform: rotate(-145deg) translate(-12px, -4px);
+        }
+        .mid {
+          opacity: 0;
+        }
+        .bot {
+          transform: rotate(150deg) translate(-9px, 6px);
+        }
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 991.9px) {
+  .itens-nav {
+    justify-content: flex-start;
+    .logo {
+      margin: auto;
+    }
+    .links-nav {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      background: blueviolet;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 575.9px) {
+  header {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .itens-nav {
+      justify-content: space-between;
+      padding: 0 15px;
+      .logo {
+        margin: unset;
       }
     }
   }
