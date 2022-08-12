@@ -107,15 +107,15 @@
       $('.links-nav').toggleClass('d-none');
     });
     
-    // $('.dropdown-nav').on('click', function () {
-    //   $(this).find('.links-dropdown').toggleClass('d-none');
-    // });
-    $('.dropdown-nav').on('mouseenter', function() {
-      $(this);
-      $(this).find('.links-dropwdown').first().stop().slideDown(200);
-    }).on('mouseleave', function() {
-      $(this).find('.links-dropwdown').first().stop().slideUP(200);
+    $('.dropdown-nav').on('click', function () {
+      $(this).find('.links-dropdown').toggleClass('d-none');
     });
+    // $('.dropdown-nav').on('mouseenter', function() {
+    //   $(this);
+    //   $(this).find('.links-dropwdown').first().stop().slideDown(200);
+    // }).on('mouseleave', function() {
+    //   $(this).find('.links-dropwdown').first().stop().slideUP(200);
+    // });
   });
 
 

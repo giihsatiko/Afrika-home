@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <!-- <header class="d-flex align-items-center">
+  <header class="d-flex align-items-center">
     <div class="container-fluid">
       <div class="itens-nav d-flex justify-content-between align-items-center">
         <div class="menu d-flex align-items-center d-lg-none">
@@ -36,7 +36,7 @@
           </div>
           <div class="dropdown-nav">
             <a href="">Soluções</a>
-            <div class="row links-dropdown">
+            <div class="row links-dropdown d-none">
               <div class="col-12 col-lg-3">
                 <h3 class="fw-700 fs-18">SOLUÇÕES</h3>
                 <a href="#" class="d-block">Implantação e capacitação</a>
@@ -88,4 +88,4 @@
         </div>
       </div>
     </div>
-  </header> -->
+  </header>
