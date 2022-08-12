@@ -47,6 +47,15 @@ footer {
       }
     }
   }
+  .girar {
+    svg {
+      fill: $vermelho;
+      path {
+        stroke: white;
+        transform: rotate(180deg) translate(-70px, -69px);
+      }
+    }
+  }
 }
 
 @media (max-width: 991.9px) {
@@ -67,15 +76,6 @@ footer {
         padding-bottom: 80px;
         border-bottom: 2px solid rgba(193, 105, 255, 0.2);
         // transition: all 0.5s ease-in-out;
-        &.ativo {
-          svg {
-            fill: $vermelho;
-            path {
-              stroke: white;
-              transform: rotate(180deg) translate(-70px, -69px);
-            }
-          }
-        }
       }
     }
     .direitos {
