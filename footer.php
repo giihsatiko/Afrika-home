@@ -4,7 +4,11 @@
       <div class="row">
         <div class="col-12 col-lg-3 conteudo-footer">
           <div class="fw-700 fs-26 d-flex align-items-center titulo-footer">
-            <img src="assets/images/seta-vermelha.svg" alt="seta abrir/fechar conteudo" class="d-block d-lg-none">
+            <div class="d-block d-lg-none seta-vermelha"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="69" y="1" width="68" height="68" rx="34" transform="rotate(90 69 1)" stroke="#FF3136" stroke-width="2" />
+                <path d="M42 31L35 38L28 31" stroke="#FF3136" stroke-width="3" />
+              </svg>
+            </div>
             <h2>Institucional</h2>
           </div>
           <div class="fw-300 fs-18 link-footer">
@@ -16,7 +20,11 @@
         </div>
         <div class="col-12 col-lg-3 conteudo-footer">
           <div class="fw-700 fs-26 d-flex align-items-center titulo-footer">
-            <img src="assets/images/seta-vermelha.svg" alt="seta abrir/fechar conteudo" class="d-block d-lg-none">
+            <div class="d-block d-lg-none seta-vermelha"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="69" y="1" width="68" height="68" rx="34" transform="rotate(90 69 1)" stroke="#FF3136" stroke-width="2" />
+                <path d="M42 31L35 38L28 31" stroke="#FF3136" stroke-width="3" />
+              </svg>
+            </div>
             <h2>Contato</h2>
           </div>
           <div class="fw-300 fs-18 link-footer">
@@ -27,7 +35,11 @@
         </div>
         <div class="col-12 col-lg-3 conteudo-footer">
           <div class="fw-700 fs-26 d-flex align-items-center titulo-footer">
-            <img src="assets/images/seta-vermelha.svg" alt="seta abrir/fechar conteudo" class="d-block d-lg-none">
+            <div class="d-block d-lg-none seta-vermelha"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="69" y="1" width="68" height="68" rx="34" transform="rotate(90 69 1)" stroke="#FF3136" stroke-width="2" />
+                <path d="M42 31L35 38L28 31" stroke="#FF3136" stroke-width="3" />
+              </svg>
+            </div>
             <h2>Conteúdos</h2>
           </div>
           <div class="fw-300 fs-18 link-footer">
@@ -38,7 +50,11 @@
         </div>
         <div class="col-12 col-lg-3 conteudo-footer">
           <div class="fw-700 fs-26 d-flex align-items-center titulo-footer">
-            <img src="assets/images/seta-vermelha.svg" alt="seta abrir/fechar conteudo" class="d-block d-lg-none">
+            <div class="d-block d-lg-none seta-vermelha"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="69" y="1" width="68" height="68" rx="34" transform="rotate(90 69 1)" stroke="#FF3136" stroke-width="2" />
+                <path d="M42 31L35 38L28 31" stroke="#FF3136" stroke-width="3" />
+              </svg>
+            </div>
             <h2>Soluções e Serviços</h2>
           </div>
           <div class="fw-300 fs-18 link-footer">
@@ -87,27 +103,21 @@
 
 </html>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
   $('document').ready(function() {
-    $('.titulo-footer').on('click', function(){
-      $(this).parent().find('.link-footer');
-      if ($('.link-footer').attr('style')) {
-        $('.link-footer').removeAttr('style');
-      }
-      else {
-        $('.link-footer').css ({
-          'max-height': $('.link-footer').prop('scrollHeight') + 'px'
-        });
-      }
+    $('.titulo-footer').on('click', function() {
+      $(this).parent().find('.link-footer').slideToggle();
+      $('.seta-vermelha').toggleClass('ativo');
     });
 
     $('.menu').on('click', function() {
       $('.burgir').toggleClass('menu-aberto');
       $('.links-nav').toggleClass('d-none');
     });
-    
-    $('.dropdown-nav').on('click', function () {
+
+    $('.dropdown-nav').on('click', function() {
       $(this).find('.links-dropdown').toggleClass('d-none');
     });
     // $('.dropdown-nav').on('mouseenter', function() {
@@ -117,6 +127,4 @@
     //   $(this).find('.links-dropwdown').first().stop().slideUP(200);
     // });
   });
-
-
 </script>
