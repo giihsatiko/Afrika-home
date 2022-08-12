@@ -115,7 +115,7 @@
     $('.dropdown-nav').on('click', function() {
       $(this).find('.links-dropdown').slideToggle();
       $(this).toggleClass('vermelhou');
-      $(this).toggleClass('position-relative');
+      // $(this).toggleClass('position-relative');
     });
 
     $('.sub-dropdown').on('click', function() {
@@ -124,7 +124,7 @@
     });
 
     $('.titulo-footer').on('click', function() {
-      $(this).parent().find('.link-footer').slideToggle();
+      $(this).parent().find('.link-footer').stop().slideToggle();
       $(this).find('.seta-vermelha').toggleClass('girar');
     });
   });

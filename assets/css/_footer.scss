@@ -47,12 +47,17 @@ footer {
       }
     }
   }
+  .seta-vermelha {
+    svg {
+      transition: all ease-in-out 0.5s;
+    }
+  }
   .girar {
     svg {
       fill: $vermelho;
+      transform: rotate(180deg);
       path {
         stroke: white;
-        transform: rotate(180deg) translate(-70px, -69px);
       }
     }
   }
