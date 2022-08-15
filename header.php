@@ -100,8 +100,8 @@
           <div class="dropdown-nav-mobile">
             <a class="fw-500 fs-18">Soluções</a>
             <div class="links-dropdown-mobile">
-              <div class="row">
-                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+              <div class="aaaa">
+                <div class="itens-dropdown-mobile">
                   <h3 class="sub-dropdown">SOLUÇÕES</h3>
                   <div class="itens-sub">
                     <a href="#" class="d-block">Implantação e capacitação</a>
@@ -111,7 +111,7 @@
                     <a href="#" class="d-block">Suport</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+                <div class="itens-dropdown-mobile">
                   <h3 class="sub-dropdown">CONSULTORIA</h3>
                   <div class="itens-sub">
                     <a href="#" class="d-block">Diagnóstico e recomendação</a>
@@ -119,7 +119,7 @@
                     <a href="#" class="d-block">Implantação de planos de ação</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+                <div class="itens-dropdown-mobile">
                   <h3 class="sub-dropdown">PROTEÇÃO DE DADOS</h3>
                   <div class="itens-sub">
                     <a href="#" class="d-block">Conscientização de usuários</a>
@@ -131,7 +131,7 @@
                     <a href="#" class="d-block">Automação e avaliação LGPD</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+                <div class="itens-dropdown-mobile">
                   <h3 class="sub-dropdown">GESTÃO DE RISCO</h3>
                   <div class="itens-sub">
                     <a href="#" class="d-block">Gerenciamento do risco de aplicativos</a>

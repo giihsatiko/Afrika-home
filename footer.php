@@ -116,9 +116,10 @@
       $(this).find('.links-dropdown').slideToggle();
     });
     $('.dropdown-nav-mobile').on('click', function() {
-      $(this).find('.links-dropdown-mobile').slideToggle();
+      $(this).find('.links-dropdown-mobile').slideToggle().stopPropagation();
     });
-    $('.sub-dropdown').on('click', function () {
+    $('.sub-dropdown').on('click', function (event) {
+      event.stopPropagation();
       $(this).parent().find('.itens-sub').slideToggle();
     });
 
