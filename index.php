@@ -1,4 +1,4 @@
-<?php include "nav.php"; ?>
+<?php include "header.php"; ?>
 
 <main></main>
 

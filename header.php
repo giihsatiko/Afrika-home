@@ -38,11 +38,8 @@
             <a>Soluções</a>
             <div class="links-dropdown">
               <div class="row">
-                <div class="col-12 col-lg-3">
-                  <div class="fw-700 fs-18 sub-dropdown d-flex align-items-center"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
-                    </svg>
-                    <h3>SOLUÇÕES</h3></div>
+                <div class="col-12 col-lg-3 itens-dropdown">
+                  <h3>SOLUÇÕES</h3>
                   <div class="itens-sub">
                     <a href="#" class="d-block">Implantação e capacitação</a>
                     <a href="#" class="d-block">Rollout do ambiente</a>
@@ -51,20 +48,16 @@
                     <a href="#" class="d-block">Suport</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                  <div class="fw-700 fs-18 sub-dropdown d-flex align-items-center"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
-                    </svg><h3>CONSULTORIA</h3></div>
-                  <div class="itens-sub">
+                <div class="col-12 col-lg-3 itens-dropdown">
+                  <h3>CONSULTORIA</h3>
+                  <div>
                     <a href="#" class="d-block">Diagnóstico e recomendação</a>
                     <a href="#" class="d-block">Planos de ação para implantação</a>
                     <a href="#" class="d-block">Implantação de planos de ação</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                  <div class="fw-700 fs-18 sub-dropdown d-flex align-items-center"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
-                    </svg><h3>PROTEÇÃO DE DADOS</h3></div>
+                <div class="col-12 col-lg-3 itens-dropdown">
+                  <h3>PROTEÇÃO DE DADOS</h3>
                   <div class="itens-sub">
                     <a href="#" class="d-block">Conscientização de usuários</a>
                     <a href="#" class="d-block">Mapeamento de dados</a>
@@ -75,11 +68,9 @@
                     <a href="#" class="d-block">Automação e avaliação LGPD</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                  <div class="fw-700 fs-18 sub-dropdown d-flex align-items-center"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
-                    </svg><h3>GESTÃO DE RISCO</h3></div>
-                  <div class="itens-sub">
+                <div class="col-12 col-lg-3 itens-dropdown">
+                  <h3>GESTÃO DE RISCO</h3>
+                  <div>
                     <a href="#" class="d-block">Gerenciamento do risco de aplicativos</a>
                     <a href="#" class="d-block">Proteção as aplicações em nuvem</a>
                   </div>
@@ -100,10 +91,68 @@
             <a href="">Contato</a>
           </div>
 
-
-
-
-
+        </div>
+        <!-- fim links nav -->
+        <div class="links-nav-mobile">
+          <div class="dropdown-nav-mobile">
+            <a href="" class="fw-500 fs-18">Home</a>
+          </div>
+          <div class="dropdown-nav-mobile">
+            <a class="fw-500 fs-18">Soluções</a>
+            <div class="links-dropdown-mobile">
+              <div class="row">
+                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+                  <h3 class="sub-dropdown">SOLUÇÕES</h3>
+                  <div class="itens-sub">
+                    <a href="#" class="d-block">Implantação e capacitação</a>
+                    <a href="#" class="d-block">Rollout do ambiente</a>
+                    <a href="#" class="d-block">Consultoria de boas práticas</a>
+                    <a href="#" class="d-block">Operação assistida</a>
+                    <a href="#" class="d-block">Suport</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+                  <h3 class="sub-dropdown">CONSULTORIA</h3>
+                  <div class="itens-sub">
+                    <a href="#" class="d-block">Diagnóstico e recomendação</a>
+                    <a href="#" class="d-block">Planos de ação para implantação</a>
+                    <a href="#" class="d-block">Implantação de planos de ação</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+                  <h3 class="sub-dropdown">PROTEÇÃO DE DADOS</h3>
+                  <div class="itens-sub">
+                    <a href="#" class="d-block">Conscientização de usuários</a>
+                    <a href="#" class="d-block">Mapeamento de dados</a>
+                    <a href="#" class="d-block">Gestão de acessos</a>
+                    <a href="#" class="d-block">Automatização de políticas</a>
+                    <a href="#" class="d-block">Definição de workflow</a>
+                    <a href="#" class="d-block">Prevenção de vazamento de dados</a>
+                    <a href="#" class="d-block">Automação e avaliação LGPD</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 itens-dropdown-mobile">
+                  <h3 class="sub-dropdown">GESTÃO DE RISCO</h3>
+                  <div class="itens-sub">
+                    <a href="#" class="d-block">Gerenciamento do risco de aplicativos</a>
+                    <a href="#" class="d-block">Proteção as aplicações em nuvem</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-nav-mobile">
+            <a class="fw-500 fs-18">Institucional</a>
+          </div>
+          <div class="dropdown-nav-mobile">
+            <a class="fw-500 fs-18">Clientes</a>
+          </div>
+          <div class="dropdown-nav-mobile">
+            <a class="fw-500 fs-18">Conteúdos</a>
+          </div>
+          <div class="dropdown-nav-mobile">
+            <a class="fw-500 fs-18">Contato</a>
+          </div>
         </div>
       </div>
     </div>

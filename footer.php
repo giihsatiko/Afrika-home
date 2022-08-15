@@ -109,23 +109,24 @@
   $('document').ready(function() {
     $('.menu').on('click', function() {
       $('.burgir').toggleClass('menu-aberto');
-      $('.links-nav').toggleClass('d-none');
+      $('.links-nav-mobile').slideToggle();
+      $('body').toggleClass('overflow-hidden');
     });
-
     $('.dropdown-nav').on('click', function() {
       $(this).find('.links-dropdown').slideToggle();
-      $(this).toggleClass('vermelhou');
-      // $(this).toggleClass('position-relative');
     });
-
-    $('.sub-dropdown').on('click', function() {
+    $('.dropdown-nav-mobile').on('click', function() {
+      $(this).find('.links-dropdown-mobile').slideToggle();
+    });
+    $('.sub-dropdown').on('click', function () {
       $(this).parent().find('.itens-sub').slideToggle();
-
     });
 
     $('.titulo-footer').on('click', function() {
-      $(this).parent().find('.link-footer').stop().slideToggle();
-      $(this).find('.seta-vermelha').toggleClass('girar');
+      if (window.innerWidth <= 991) {
+        $(this).parent().find('.link-footer').stop().slideToggle();
+        $(this).find('.seta-vermelha').toggleClass('girar');
+      }
     });
   });
 </script>
