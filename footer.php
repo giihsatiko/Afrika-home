@@ -112,9 +112,9 @@
       $('.links-nav-mobile').slideToggle();
       $('body').toggleClass('overflow-hidden');
     });
-    $('.dropdown-nav').on('click', function() {
-      $(this).find('.links-dropdown').slideToggle();
-    });
+    // $('.dropdown-nav').on('click', function() {
+    //   $(this).find('.links-dropdown').toggleClass('d-none');
+    // });
     $('.dropdown-nav-mobile').on('click', function() {
       $(this).find('.links-dropdown-mobile').slideToggle();
       $(this).toggleClass('vermelhou');
