@@ -116,10 +116,12 @@
       $(this).find('.links-dropdown').slideToggle();
     });
     $('.dropdown-nav-mobile').on('click', function() {
-      $(this).find('.links-dropdown-mobile').slideToggle().stopPropagation();
+      $(this).find('.links-dropdown-mobile').slideToggle();
+      $(this).toggleClass('vermelhou');
     });
     $('.sub-dropdown').on('click', function (event) {
       event.stopPropagation();
+      $(this).toggleClass('vermelhou-itens');
       $(this).parent().find('.itens-sub').slideToggle();
     });
 

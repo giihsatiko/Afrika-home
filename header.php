@@ -102,40 +102,60 @@
             <div class="links-dropdown-mobile">
               <div class="aaaa">
                 <div class="itens-dropdown-mobile">
-                  <h3 class="sub-dropdown">SOLUÇÕES</h3>
+                  <div class="sub-dropdown d-flex align-items-center">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                    </svg>
+                    <h3 class="fw-700 fs-18">SOLUÇÕES</h3>
+                  </div>
                   <div class="itens-sub">
-                    <a href="#" class="d-block">Implantação e capacitação</a>
-                    <a href="#" class="d-block">Rollout do ambiente</a>
-                    <a href="#" class="d-block">Consultoria de boas práticas</a>
-                    <a href="#" class="d-block">Operação assistida</a>
-                    <a href="#" class="d-block">Suport</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Implantação e capacitação</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Rollout do ambiente</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Consultoria de boas práticas</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Operação assistida</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Suport</a>
                   </div>
                 </div>
                 <div class="itens-dropdown-mobile">
-                  <h3 class="sub-dropdown">CONSULTORIA</h3>
+                  <div class="sub-dropdown d-flex align-items-center">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                    </svg>
+                    <h3 class="fw-700 fs-18">CONSULTORIA</h3>
+                  </div>
                   <div class="itens-sub">
-                    <a href="#" class="d-block">Diagnóstico e recomendação</a>
-                    <a href="#" class="d-block">Planos de ação para implantação</a>
-                    <a href="#" class="d-block">Implantação de planos de ação</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Diagnóstico e recomendação</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Planos de ação para implantação</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Implantação de planos de ação</a>
                   </div>
                 </div>
                 <div class="itens-dropdown-mobile">
-                  <h3 class="sub-dropdown">PROTEÇÃO DE DADOS</h3>
+                  <div class="sub-dropdown d-flex align-items-center">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                    </svg>
+                    <h3 class="fw-700 fs-18">PROTEÇÃO DE DADOS</h3>
+                  </div>
                   <div class="itens-sub">
-                    <a href="#" class="d-block">Conscientização de usuários</a>
-                    <a href="#" class="d-block">Mapeamento de dados</a>
-                    <a href="#" class="d-block">Gestão de acessos</a>
-                    <a href="#" class="d-block">Automatização de políticas</a>
-                    <a href="#" class="d-block">Definição de workflow</a>
-                    <a href="#" class="d-block">Prevenção de vazamento de dados</a>
-                    <a href="#" class="d-block">Automação e avaliação LGPD</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Conscientização de usuários</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Mapeamento de dados</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Gestão de acessos</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Automatização de políticas</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Definição de workflow</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Prevenção de vazamento de dados</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Automação e avaliação LGPD</a>
                   </div>
                 </div>
                 <div class="itens-dropdown-mobile">
-                  <h3 class="sub-dropdown">GESTÃO DE RISCO</h3>
+                  <div class="sub-dropdown d-flex align-items-center">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                    </svg>
+                    <h3 class="fw-700 fs-18">GESTÃO DE RISCO</h3>
+                  </div>
                   <div class="itens-sub">
-                    <a href="#" class="d-block">Gerenciamento do risco de aplicativos</a>
-                    <a href="#" class="d-block">Proteção as aplicações em nuvem</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Gerenciamento do risco de aplicativos</a>
+                    <a href="#" class="d-flex align-items-center"><span class="faixa-branca"></span>Proteção as aplicações em nuvem</a>
                   </div>
                 </div>
               </div>
