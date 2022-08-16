@@ -2,5 +2,37 @@
 @import 'base/variaveis';
 @import 'base/tipografia';
 @import 'base/base';
+@import 'base/swiper';
 @import 'header';
 @import 'footer';
+@import 'banner';
+
+.botao-vermelho {
+  background-color: $vermelho;
+  border-radius: 3px;
+  width: fit-content;
+  max-height: 70px;
+  height: 100%;
+  color: white;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: white;
+  }
+}
+
+.botao-vermelho-nobg {
+  border: 2px solid $vermelho;
+  border-radius: 3px;
+  width: fit-content;
+  max-height: 70px;
+  height: 100%;
+  color: $vermelho;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: white;
+  }
+}

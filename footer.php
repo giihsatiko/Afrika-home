@@ -102,7 +102,20 @@
 </body>
 
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper-banner", {
+    navigation: {
+      nextEl: ".banner-button-next",
+      prevEl: ".banner-button-prev",
+    },
+    pagination: {
+      el: ".banner-pagination",
+    },
+  });
+</script>
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
@@ -117,8 +130,8 @@
       $(this).find('.links-dropdown-mobile').slideToggle();
       $(this).toggleClass('vermelhou');
     });
-    
-    $('.sub-dropdown').on('click', function (event) {
+
+    $('.sub-dropdown').on('click', function(event) {
       event.stopPropagation();
       $(this).toggleClass('vermelhou-itens');
       $(this).parent().find('.itens-sub').slideToggle();

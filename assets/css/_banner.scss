@@ -1,0 +1,74 @@
+.banner-img {
+  position: relative;
+  background-image: url(assets/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 623px;
+  width: 100%;
+  .texto-banner {
+    width: 630px;
+    color: white;
+    // margin-left: 7.2%;
+    text-align: left;
+    p {
+      margin: 0;
+    }
+    .links-banner {
+      padding-top: 36px;
+      .botao-vermelho {
+        margin-right: 30px;
+        svg {
+          transform: rotate(-90deg);
+          margin-left: 16px;
+        }
+      }
+      .botao-vermelho-nobg, .botao-vermelho {
+        padding: 25px 65px;
+      }
+    }
+  }
+
+}
+
+
+.itens-swiper-banner {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  z-index: 1000;
+  .scroll-down, .setas-banner {
+    color: white;
+  }
+  .scroll-down {
+    gap: 8px;
+  }
+  .setas-banner {
+    gap: 18px;
+    .divisao-botoes {
+      width: 179px;
+      height: 2px;
+      background-color: white;
+      display: block;
+    }
+  }
+  .swiper-pagination-bullets {
+    width: fit-content;
+    display: flex;
+    gap: 45px;
+    .swiper-pagination-bullet {
+      border: 1px solid #FFFFFF;
+      border-radius: 0%;
+      height: 5px;
+      width: 5px;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: white;
+      border-radius: 0%;
+      height: 5px;
+      width: 41px;
+      opacity: 1;
+    }
+  }
+}
