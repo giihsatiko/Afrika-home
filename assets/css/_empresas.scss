@@ -1,0 +1,36 @@
+.empresas {
+  background-image: url(assets/images/empresas-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  .container-caixas {
+    gap: 33px;
+    width: 520px;
+    .divisao-caixas, .divisao-caixas2 {
+      gap: 33px;
+    }
+    .caixa-branca {
+      height: 204px;
+      width: 204px;
+      background-color: white;
+      backdrop-filter: blur(30px);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+  .texto-empresas {
+    color: white;
+    width: 543px;
+    h1 {
+      padding-bottom: 25px;
+    }
+    .botao-vermelho {
+      padding: 25px 50px;
+      gap: 15px;
+      margin-top: 31px;
+    }
+  }
+}

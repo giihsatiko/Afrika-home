@@ -41,7 +41,44 @@
   </div>
 </section>
 <main></main>
-
+<section class="empresas d-flex align-items-center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="container-caixas d-flex align-items-center flex-wrap mx-auto">
+          <div class="divisao-caixas d-flex w-100">
+            <div class="caixa-branca">
+              <a href="#"><img src="assets/images/empresa.png" alt="logo empresa"></a>
+            </div>
+            <div class="caixa-branca">
+              <a href="#"><img src="assets/images/empresa2.png" alt="logo empresa"></a>
+            </div>
+          </div>
+          <div class="divisao-caixas2 d-flex justify-content-end w-100">
+            <div class="caixa-branca">
+              <a href="#"><img src="assets/images/empresa3.png" alt="logo empresa"></a>
+            </div>
+            <div class="caixa-branca">
+              <a href="#"><img src="assets/images/empresa4.png" alt="logo empresa"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="texto-empresas">
+          <h1 class="fw-700 fs-48">Empresas que confiam
+            em nosso trabalho</h1>
+          <p class="fw-300 fs-22">A relação que construímos ao longo de nossa caminhada com clientes, parceiros sempre será, pautada no crescimento mútuo, transparência e comprometimento.</p>
+          <a href="#" class="botao-vermelho fw-500 fs-16">VER TODOS OS CLIENTES
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <?php include "footer.php"; ?>
