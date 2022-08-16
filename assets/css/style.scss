@@ -21,6 +21,10 @@
   align-items: center;
   font-weight: 500;
   font-size: 16px;
+  gap: 15px;
+  svg {
+    transform: rotate(-90deg);
+  }
   &:hover {
     color: white;
   }
@@ -38,6 +42,10 @@
   align-items: center;
   font-weight: 500;
   font-size: 16px;
+  gap: 15px;
+  svg {
+    transform: rotate(-90deg);
+  }
   &:hover {
     color: $vermelho;
   }

@@ -6,8 +6,10 @@
   .container-caixas {
     gap: 33px;
     width: 520px;
+    flex-wrap: wrap;
     .divisao-caixas, .divisao-caixas2 {
       gap: 33px;
+      width: 100%;
     }
     .caixa-branca {
       height: 204px;
@@ -23,14 +25,49 @@
   }
   .texto-empresas {
     color: white;
-    width: 543px;
     h1 {
       padding-bottom: 25px;
+      max-width: 543px;
     }
     .botao-vermelho {
       padding: 25px 50px;
-      gap: 15px;
       margin-top: 31px;
+      max-width: 543px;
+    }
+  }
+}
+
+
+@media (max-width: 991.9px) {
+  .container-caixas {
+    width: 100% !important;
+    gap: unset !important;
+    flex-wrap: nowrap !important;
+    .divisao-caixas, .divisao-caixas2 {
+      width: fit-content;
+      justify-content: center !important;
+    }
+  }
+  .texto-empresas {
+    width: 100% !important;
+    p {
+      padding-top: 32px;
+      width: 75%;
+    }
+  }
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        height: 170px;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .fale-conosco {
+    background-position: bottom;
+    .texto-fale-conosco {
+      width: 62% !important;
     }
   }
 }

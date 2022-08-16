@@ -45,8 +45,12 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-lg-6">
-        <div class="container-caixas d-flex align-items-center flex-wrap mx-auto">
-          <div class="divisao-caixas d-flex w-100">
+        <div class="texto-empresas d-block d-lg-none">
+          <h1 class="fw-700 fs-48">Empresas que confiam
+            em nosso trabalho</h1>
+        </div>
+        <div class="container-caixas d-none d-lg-flex align-items-center mx-auto">
+          <div class="divisao-caixas d-flex">
             <div class="caixa-branca">
               <a href="#"><img src="assets/images/empresa.png" alt="logo empresa"></a>
             </div>
@@ -54,7 +58,7 @@
               <a href="#"><img src="assets/images/empresa2.png" alt="logo empresa"></a>
             </div>
           </div>
-          <div class="divisao-caixas2 d-flex justify-content-end w-100">
+          <div class="divisao-caixas2 d-flex justify-content-end">
             <div class="caixa-branca">
               <a href="#"><img src="assets/images/empresa3.png" alt="logo empresa"></a>
             </div>
@@ -63,14 +67,52 @@
             </div>
           </div>
         </div>
+        <div class="swiper-container d-block d-lg-none">
+          <div class="swiper mySwiper-empresas">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="caixa-branca">
+                  <a href="#"><img src="assets/images/empresa.png" alt="logo empresa"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="caixa-branca">
+                  <a href="#"><img src="assets/images/empresa2.png" alt="logo empresa"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="caixa-branca">
+                  <a href="#"><img src="assets/images/empresa3.png" alt="logo empresa"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="caixa-branca">
+                  <a href="#"><img src="assets/images/empresa4.png" alt="logo empresa"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-lg-none">
+          <div class="texto-empresas">
+            <h1 class="fw-700 fs-48 d-none d-lg-block">Empresas que confiam
+              em nosso trabalho</h1>
+            <p class="fw-300 fs-22">A relação que construímos ao longo de nossa caminhada com clientes, parceiros sempre será, pautada no crescimento mútuo, transparência e comprometimento.</p>
+            <a href="#" class="botao-vermelho">VER TODOS OS CLIENTES
+              <svg width=" 18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 d-none d-lg-flex">
         <div class="texto-empresas">
-          <h1 class="fw-700 fs-48">Empresas que confiam
+          <h1 class="fw-700 fs-48 d-none d-lg-block">Empresas que confiam
             em nosso trabalho</h1>
           <p class="fw-300 fs-22">A relação que construímos ao longo de nossa caminhada com clientes, parceiros sempre será, pautada no crescimento mútuo, transparência e comprometimento.</p>
-          <a href="#" class="botao-vermelho>VER TODOS OS CLIENTES
-            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#" class="botao-vermelho">VER TODOS OS CLIENTES
+            <svg width=" 18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
             </svg>
           </a>
@@ -80,17 +122,21 @@
   </div>
 </section>
 <section class="fale-conosco d-flex align-items-center">
-  <div class="container">
+  <div class="container-lg container-fluid">
     <div class="texto-fale-conosco">
       <h1 class="fw-700 fs-48 white">Sua empresa protegida dos riscos da era digital</h1>
       <p class="fw-300 fs-22 white">A AFRIKA Tecnologia pode ajudar sua empresa com soluções inovadoras em Segurança da Informação.</p>
-      <div class="botoes-fale-conosco d-flex align-items-center">
+      <div class="botoes-fale-conosco d-flex flex-column flex-md-row align-items-center">
         <a href="#" class="botao-vermelho">SOLICITAR AVALIAÇÃO
           <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
           </svg>
         </a>
-        <a href="#" class="botao-vermelho-nobg">FALE CONOSCO</a>
+        <a href="#" class="botao-vermelho-nobg">FALE CONOSCO
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2L9 9L2 2" stroke="#FF3136" stroke-width="3" />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
