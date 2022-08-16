@@ -69,7 +69,7 @@
           <h1 class="fw-700 fs-48">Empresas que confiam
             em nosso trabalho</h1>
           <p class="fw-300 fs-22">A relação que construímos ao longo de nossa caminhada com clientes, parceiros sempre será, pautada no crescimento mútuo, transparência e comprometimento.</p>
-          <a href="#" class="botao-vermelho fw-500 fs-16">VER TODOS OS CLIENTES
+          <a href="#" class="botao-vermelho>VER TODOS OS CLIENTES
             <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
             </svg>
@@ -79,6 +79,21 @@
     </div>
   </div>
 </section>
-
+<section class="fale-conosco d-flex align-items-center">
+  <div class="container">
+    <div class="texto-fale-conosco">
+      <h1 class="fw-700 fs-48 white">Sua empresa protegida dos riscos da era digital</h1>
+      <p class="fw-300 fs-22 white">A AFRIKA Tecnologia pode ajudar sua empresa com soluções inovadoras em Segurança da Informação.</p>
+      <div class="botoes-fale-conosco d-flex align-items-center">
+        <a href="#" class="botao-vermelho">SOLICITAR AVALIAÇÃO
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+          </svg>
+        </a>
+        <a href="#" class="botao-vermelho-nobg">FALE CONOSCO</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <?php include "footer.php"; ?>

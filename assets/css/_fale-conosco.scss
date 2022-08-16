@@ -1,0 +1,25 @@
+.fale-conosco {
+  background-image: url(assets/images/fale-conosco-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 685px;
+  width: 100%;
+  .texto-fale-conosco {
+    width: 638px;
+    p {
+      margin: 0;
+      padding-top: 29px;
+    }
+    .botoes-fale-conosco {
+      gap: 31px;
+      padding-top: 33px;
+      .botao-vermelho {
+        padding: 25px 70px;
+        gap: 14px;
+      }
+      .botao-vermelho-nobg {
+        padding: 25px 95px;
+      }
+    }
+  }
+}
