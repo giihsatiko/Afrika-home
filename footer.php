@@ -105,6 +105,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script>
   var swiper = new Swiper(".mySwiper-banner", {
+    loop: true,
     navigation: {
       nextEl: ".banner-button-next",
       prevEl: ".banner-button-prev",
@@ -115,6 +116,22 @@
   });
 
   var swiper2 = new Swiper(".mySwiper-empresas", {
+    breakpoints: {
+      579: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    },
+  });
+
+  var swiper3 = new Swiper(".mySwiper-conteudos", {
+    pagination: {
+      el: ".conteudos-pagination",
+    },
     breakpoints: {
       579: {
         slidesPerView: 3,

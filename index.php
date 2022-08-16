@@ -121,6 +121,38 @@
     </div>
   </div>
 </section>
+<section class="conteudos d-flex flex-column justify-content-center">
+  <div class="container-fluid">
+    <div class="titulo-conteudos d-flex align-items-center justify-content-between w-100">
+      <h1 class="fw-700 fs-64 white">CONTEÚDOS</h1>
+      <div class="seletor-conteudo">
+        <label for="conteudos" class="form-label">Conteúdos do blog</label>
+        <select id="conteudos" class="d-flex align-items-center">
+          <option>a</option>
+          <option>b</option>
+          <option>c</option>
+        </select>
+      </div>
+    </div>
+    <div class="swiper mySwiper-conteudos">
+      <div class="swiper-wrapper">
+        <?php for ($i = 0; $i < 10; $i++) : ?>
+          <div class="swiper-slide">
+            <a href="#" class="link-conteudo">
+              <img src="assets/images/notebook.png" alt="notebook">
+              <span class="data white fw-500 fs-16 d-block">13 | 03 | 21</span>
+              <h4 class="fw-700 fs-22 white">Você já sabe usar a criptografia para a segurança de seus dados?</h4>
+            </a>
+          </div>
+        <?php endfor; ?>
+      </div>
+      <div class="paginacao-conteudo d-flex align-items-center">
+        <div class="conteudos-pagination"></div>
+        <a href="#" class="block link-blog f-500 fs-16">VER TODAS DO BLOG</a>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="fale-conosco d-flex align-items-center">
   <div class="container-lg container-fluid">
     <div class="texto-fale-conosco">

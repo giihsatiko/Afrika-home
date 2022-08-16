@@ -1,0 +1,37 @@
+.conteudos {
+  background-color: $roxo-escuro;
+  height: 874px;
+  .titulo-conteudos {
+    .seletor-conteudo {
+      select {
+        text-align: center;
+        width: 264px;
+        color: white;
+        background-color: $roxo-escuro;
+        padding-bottom: 24px;
+        border-bottom: 2px solid #c169ff;
+      }
+    }
+  }
+  .mySwiper-conteudos {
+    .swiper-wrapper {
+      height: fit-content;
+      .swiper-slide {
+        background-color: $roxo-escuro;
+        height: 500px;
+        .link-conteudo {
+          text-align: left;
+          .data {
+            padding: 23px 0 14px 0;
+          }
+        }
+      }
+    }
+  }
+  .link-blog {
+    color: $vermelho;
+    padding: 10px;
+    border-bottom: 4px solid $vermelho;
+    white-space: nowrap;
+  }
+}
