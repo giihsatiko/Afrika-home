@@ -17,19 +17,21 @@
 </head>
 
 <body>
-  <header class="d-flex align-items-center">
+  <header class="d-flex align-items-center" id="#topo">
     <div class="container-fluid">
       <div class="itens-nav d-flex justify-content-between align-items-center">
-        <div class="menu d-flex align-items-center d-lg-none">
-          <div class="burgir">
-            <span class="top"></span>
-            <span class="mid"></span>
-            <span class="bot"></span>
+        <div class="menu-logo d-flex justify-content-between align-items-center w-100">
+          <div class="menu d-flex align-items-center d-lg-none">
+            <div class="burgir">
+              <span class="top"></span>
+              <span class="mid"></span>
+              <span class="bot"></span>
+            </div>
+            <p class="fw-500 fs-18">Menu</p>
           </div>
-          <p class="fw-500 fs-18">Menu</p>
+          <a href="index.php" class="logo d-none d-sm-block"><img src="assets/images/logo.png" alt="logo"></a>
+          <a href="index.php" class=" logo d-block d-sm-none"><img src="assets/images/logo-menor-nav.png" alt="logo"></a>
         </div>
-        <a href="index.php" class="logo d-none d-sm-block"><img src="assets/images/logo.png" alt="logo"></a>
-        <a href="index.php" class=" logo d-block d-sm-none"><img src="assets/images/logo-menor-nav.png" alt="logo"></a>
         <div class="links-nav fw-500 fs-18 d-none d-lg-flex">
           <div class="dropdown-nav">
             <a href="">Home</a>
