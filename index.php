@@ -97,8 +97,8 @@
 </main>
 <section class="conheca d-flex align-items-center">
   <div class="container-conheca container-lg container-fluid">
-    <div class="row">
-      <div class="col-7 parte-texto d-flex align-items-center">
+    <div class="divisao d-flex align-items-center justify-content-between">
+      <div class="parte-texto d-flex align-items-center">
         <div class="texto-conheca white">
           <h1 class="fw-700 fs-48">Nossa experiência de mercado supera 20 anos
             integrando soluções</h1>
@@ -109,6 +109,54 @@
               <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
             </svg>
           </a>
+        </div>
+      </div>
+      <div class="parte-swiper">
+        <div class="container-swiper d-flex flex-column justify-content-center d-none">
+          <h1 class="fw-700 fs-64 white">DIFERENCIAIS</h1>
+          <div class="swiper mySwiper-conheca">
+            <div class="swiper-wrapper">
+              <?php for ($i = 0; $i < 5; $i++) : ?>
+                <div class="swiper-slide">
+                  <a class="conheca-item d-flex flex-column align-items-start justify-content-center">
+                    <h3 class="fw-700 fs-26">Equipe Multifuncional</h3>
+                    <p class="fw-300 fs-16">Especialistas em diversas práticas de mercado, tais como: PMP, CGEIT, ITIL, COBIT, ISO 20000, CRISC, e BS7799.</p>
+                    <span class="d-block link-blog fw-500 fs-16">SAIBA MAIS</span>
+                  </a>
+                </div>
+              <?php endfor; ?>
+            </div>
+            <div class="container-fluid itens-swiper-conheca">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <div class="conheca-pagination"></div>
+                <a href="#conteudo" class="scroll-down fw-400 fs-13 d-flex justify-content-between align-items-center">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                  </svg>
+                  SCROLL DOWN
+                </a>
+                <div class="setas-conheca d-flex justify-content-between align-items-center">
+                  <div class="conheca-button-prev">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                    </svg>
+                  </div>
+                  <div class="conheca-button-next">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mais d-flex align-items-center">
+          <img src="assets/images/mais.png" alt="cruz">
+          <div class="palavra fw-400 fs-24 white">
+            <p class="diferenciais">DIFERENCIAIS</p>
+            <p class="voltar">VOLTAR</p>
+          </div>
         </div>
       </div>
     </div>

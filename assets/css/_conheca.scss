@@ -1,15 +1,88 @@
 .conheca {
   background-color: $roxo-escuro;
   height: 725px;
-  .container-conheca, .row{
+  background-image: url(assets/images/leao.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  .container-conheca {
     height: 100%;
-  }
-  .parte-texto {
-    background-image: url(assets/images/leao.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    .texto-conheca {
-      text-align: left;
+    .divisao {
+      height: 100%;
+    }
+    .parte-texto {
+      width: 50%;
+      height: 100%;
+      .texto-conheca {
+        text-align: left;
+        .botao-vermelho {
+          padding: 25px 65px;
+        }
+      }
+    }
+    .parte-swiper {
+      height: 100%;
+      width: 50%;
+      background-image: url(assets/images/leao-realista.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-left: 2px solid $vermelho;
+      position: relative;
+      transform: translateX(60%);
+      .mais {
+        position: absolute;
+        top: 50%;
+        left: -37px;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+        gap: 15px;
+        .palavra {
+          p {
+            margin: 0;
+          }
+          .voltar {
+            display: none;
+          }
+        }
+        &.abrido {
+          img {
+            transform: rotate(45deg);
+          }
+          .palavra {
+            .diferenciais {
+              display: none !important;
+            }
+            .voltar {
+              display: block !important;
+            }
+          }
+        }
+      }
+      .container-swiper {
+        height: 100%;
+        .mySwiper-conheca {
+          height: 334px;
+          .swiper-slide {
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.7);
+            width: 412px !important;
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            border: 2px solid transparent;
+            &:hover {
+              border: 2px solid $vermelho;
+            }
+            .conheca-item {
+              width: 100%;
+              color: #575656;
+              padding: 40px;
+              text-align: left;
+            }
+          }
+        }
+      }
     }
   }
 }

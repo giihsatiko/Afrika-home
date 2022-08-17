@@ -164,6 +164,27 @@
       }
     },
   });
+
+  var swiper5 = new Swiper(".mySwiper-conheca", {
+    loop: true,
+    navigation: {
+      nextEl: ".conheca-button-next",
+      prevEl: ".conheca-button-prev",
+    },
+    pagination: {
+      el: ".conheca-pagination",
+    },
+    breakpoints: {
+      579: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2.3,
+        spaceBetween: 15,
+      }
+    },
+  });
 </script>
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -175,13 +196,13 @@
       $('body').toggleClass('overflow-hidden');
     });
 
-    $('.item-vantagem').on('click', function(){
+    $('.item-vantagem').on('click', function() {
       $(this).toggleClass('selecionado');
     });
 
-    // $('.link-vantagens').on('click', function(){
-    //   $(this).toggleClass('slide-selecionado');
-    // });
+    $('.mais').on('click', function() {
+      $(this).toggleClass('abrido');
+    });
 
     $('.dropdown-nav-mobile').on('click', function() {
       $(this).find('.links-dropdown-mobile').slideToggle();
