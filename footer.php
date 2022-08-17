@@ -133,11 +133,15 @@
       el: ".conteudos-pagination",
     },
     breakpoints: {
-      579: {
-        slidesPerView: 3,
+      576: {
+        slidesPerView: 2.5,
         spaceBetween: 30,
       },
       768: {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      992: {
         slidesPerView: 3.5,
         spaceBetween: 30,
       }
@@ -154,8 +158,8 @@
       el: ".vantagens-pagination",
     },
     breakpoints: {
-      579: {
-        slidesPerView: 3,
+      576: {
+        slidesPerView: 2.5,
         spaceBetween: 30,
       },
       768: {

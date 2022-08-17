@@ -61,3 +61,32 @@
   border-bottom: 4px solid $vermelho;
   white-space: nowrap;
 }
+
+@media(max-width: 991.9px) {
+  // banner
+  .divisao-botoes {
+    width: 46px !important;
+  }
+  // vantagens
+  .lista-vantagens {
+    padding-right: 0 !important;
+  }
+
+  // fale conosco
+  .texto-fale-conosco {
+    width: 75% !important;
+  }
+}
+
+@media(max-width: 767.9px) {
+  // conheca
+  .parte-swiper {
+    width: 100% !important;
+    border-left: none !important;
+    border-top: 2px solid $vermelho;
+    transform: translateX(0%) !important;
+    .mySwiper-conheca {
+      margin: 0 20px !important;
+    }
+  }
+}

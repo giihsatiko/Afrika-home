@@ -5,7 +5,7 @@
       <?php for ($i = 0; $i < 5; $i++) : ?>
         <div class="swiper-slide">
           <div class="banner-img d-flex align-items-center justify-content-start">
-            <div class="container">
+            <div class="container-md container-fluid">
               <div class="texto-banner">
                 <h1 class="fw-700 fs-64">Cibersegurança</h1>
                 <p class="fw-400 fs-22">A Infraestrutura da sua empresa precisa ser segura e eficiente, conheça nossas soluções</p>
@@ -43,15 +43,16 @@
 <main class="vantagens d-flex align-items-center" id="conteudo">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-5">
-        <div class="lista-vantagens fw-400 fs-22 white">
+      <div class="col-12 col-lg-5">
+        <div class="lista-vantagens fw-400 fs-22 white d-flex flex-row flex-lg-column">
           <a class="d-block item-vantagem">Soluções</a>
           <a class="d-block item-vantagem">Proteção de dados</a>
           <a class="d-block item-vantagem">Consultoria</a>
-          <a class="d-block item-vantagem">Gestão de Risco e Vulnerabilidade</a>
+          <a class="d-none d-md-block item-vantagem">Gestão de Risco e Vulnerabilidade</a>
+          <a class="d-md-none d-block item-vantagem">Gestão</a>
         </div>
       </div>
-      <div class="col-7">
+      <div class=" col-12 col-lg-7">
         <div class="swiper mySwiper-vantagens">
           <div class="swiper-wrapper">
             <?php for ($i = 0; $i < 5; $i++) : ?>
@@ -96,23 +97,26 @@
   </div>
 </main>
 <section class="conheca d-flex align-items-center">
-  <div class="container-conheca container-lg container-fluid">
+  <div class="container-conheca">
     <div class="divisao d-flex align-items-center justify-content-between">
-      <div class="parte-texto d-flex align-items-center">
-        <div class="texto-conheca white">
-          <h1 class="fw-700 fs-48">Nossa experiência de mercado supera 20 anos
-            integrando soluções</h1>
-          <p class="fw-300 fs-22">Afrika Tecnologia é um Integrador de Soluções de Infraestrutura de TI especializado em Segurança da Informação e Proteção de Dados.</p>
-          <a href="#" class="botao-vermelho">
-            CONHEÇA A EMPRESA
-            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
-            </svg>
-          </a>
+      <div class="parte-texto d-none d-md-block container-lg container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="texto-conheca white">
+            <h1 class="fw-700 fs-48">Nossa experiência de mercado supera 20 anos
+              integrando soluções</h1>
+            <p class="fw-300 fs-22">Afrika Tecnologia é um Integrador de Soluções de Infraestrutura de TI especializado em Segurança da Informação e Proteção de Dados.</p>
+            <a href="#" class="botao-vermelho">
+              CONHEÇA A EMPRESA
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
+
       <div class="parte-swiper d-flex align-items-center">
-        <div class="container-swiper d-none">
+        <div class="container-swiper d-block d-md-none">
           <div class="swiper mySwiper-conheca">
             <h1 class="fw-700 fs-64 white">DIFERENCIAIS</h1>
             <div class="swiper-wrapper">
@@ -145,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="mais d-flex align-items-center">
+        <div class="mais d-none d-md-flex align-items-center">
           <img src="assets/images/mais.png" alt="cruz">
           <div class="palavra fw-400 fs-24 white">
             <p class="diferenciais">DIFERENCIAIS</p>
@@ -272,7 +276,7 @@
     <div class="texto-fale-conosco">
       <h1 class="fw-700 fs-48 white">Sua empresa protegida dos riscos da era digital</h1>
       <p class="fw-300 fs-22 white">A AFRIKA Tecnologia pode ajudar sua empresa com soluções inovadoras em Segurança da Informação.</p>
-      <div class="botoes-fale-conosco d-flex flex-column flex-md-row align-items-center">
+      <div class="botoes-fale-conosco d-flex flex-column flex-sm-row align-items-center">
         <a href="#" class="botao-vermelho">SOLICITAR AVALIAÇÃO
           <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
