@@ -40,7 +40,80 @@
     </div>
   </div>
 </section>
-<main></main>
+<main class="vantagens d-flex align-items-center" id="conteudo">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-5">
+        <div class="lista-vantagens fw-400 fs-22 white">
+          <a class="d-block item-vantagem">Soluções</a>
+          <a class="d-block item-vantagem">Proteção de dados</a>
+          <a class="d-block item-vantagem">Consultoria</a>
+          <a class="d-block item-vantagem">Gestão de Risco e Vulnerabilidade</a>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="swiper mySwiper-vantagens">
+          <div class="swiper-wrapper">
+            <?php for ($i = 0; $i < 5; $i++) : ?>
+              <div class="swiper-slide">
+                <a class="link-vantagens d-block w-100 white">
+                  <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="34" cy="34" r="34" fill="#5C2483" />
+                    <path d="M43.7591 38.7494C42.1765 37.1131 40.2965 35.9058 38.2477 35.1731L37.6051 34.9453L38.1632 34.5467C40.3259 33.0053 41.7432 30.4351 41.7432 27.5232C41.7432 25.1731 40.8179 23.0433 39.3272 21.4981C37.8327 19.9567 35.7729 19 33.5 19C31.2271 19 29.1673 19.9567 27.6728 21.4981C26.1784 23.0433 25.2568 25.1731 25.2568 27.5232C25.2568 30.4351 26.6741 33.0091 28.8368 34.5467L29.3949 34.9453L28.756 35.1731C26.7035 35.9058 24.8235 37.1131 23.2446 38.7494C20.5789 41.4981 19.0881 45.1238 19 49H20.6376C20.8212 41.8246 26.5162 36.0463 33.5 36.0463C40.4838 36.0463 46.1788 41.8246 46.3624 49H48C47.9119 45.1238 46.4174 41.4981 43.7591 38.7494ZM26.8944 27.5232C26.8944 23.757 29.8576 20.6932 33.5 20.6932C37.1424 20.6932 40.1056 23.757 40.1056 27.5232C40.1056 31.2893 37.1424 34.3531 33.5 34.3531C29.8539 34.3531 26.8944 31.2893 26.8944 27.5232Z" fill="#C169FF" />
+                  </svg>
+                  <h2 class="fw-700 fs-26">Conscientização de usuários, campanhas e treinamentos</h2>
+                  <p class="fw-300 fs-16">Ao clicar em "Aceitar todos os cookies", você concorda com o armazenamento de cookies no seu dispositivo para melhorar a navegação no site</p>
+                </a>
+              </div>
+            <?php endfor; ?>
+          </div>
+          <div class="container-fluid itens-swiper-vantagens">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <div class="vantagens-pagination"></div>
+              <a href="#conteudo" class="scroll-down fw-400 fs-13 d-flex justify-content-between align-items-center">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                </svg>
+                SCROLL DOWN
+              </a>
+              <div class="setas-vantagens d-flex justify-content-between align-items-center">
+                <div class="vantagens-button-prev">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                  </svg>
+                </div>
+                <div class="vantagens-button-next">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<section class="conheca d-flex align-items-center">
+  <div class="container-conheca container-lg container-fluid">
+    <div class="row">
+      <div class="col-7 parte-texto d-flex align-items-center">
+        <div class="texto-conheca white">
+          <h1 class="fw-700 fs-48">Nossa experiência de mercado supera 20 anos
+            integrando soluções</h1>
+          <p class="fw-300 fs-22">Afrika Tecnologia é um Integrador de Soluções de Infraestrutura de TI especializado em Segurança da Informação e Proteção de Dados.</p>
+          <a href="#" class="botao-vermelho">
+            CONHEÇA A EMPRESA
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="empresas d-flex align-items-center">
   <div class="container-fluid">
     <div class="row">
@@ -126,7 +199,6 @@
     <div class="titulo-conteudos d-flex align-items-center justify-content-between w-100">
       <h1 class="fw-700 fs-64 white">CONTEÚDOS</h1>
       <div class="seletor-conteudo">
-        <label for="conteudos" class="form-label">Conteúdos do blog</label>
         <select id="conteudos" class="d-flex align-items-center">
           <option>a</option>
           <option>b</option>
@@ -148,7 +220,7 @@
       </div>
       <div class="paginacao-conteudo d-flex align-items-center">
         <div class="conteudos-pagination"></div>
-        <a href="#" class="block link-blog f-500 fs-16">VER TODAS DO BLOG</a>
+        <a href="#" class="block link-blog fw-500 fs-16">VER TODAS DO BLOG</a>
       </div>
     </div>
   </div>

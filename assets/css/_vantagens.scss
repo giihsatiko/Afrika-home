@@ -1,0 +1,45 @@
+.vantagens {
+  background-color: $roxo-escuro;
+  height: 725px;
+  .lista-vantagens {
+    cursor: pointer;
+    padding-right: 95px;
+    .item-vantagem {
+      padding: 30px;
+      border-bottom: 2px solid transparent;
+      &.selecionado {
+        border-bottom: 2px solid $vermelho;
+      }
+    }
+  }
+  .mySwiper-vantagens {
+    .swiper-slide {
+      background-color: $roxo-escuro;
+      .link-vantagens {
+        text-align: left;
+        cursor: pointer;
+        border: 2px solid transparent;
+        padding: 30px;
+        &:hover {
+          color: white;
+          border: 2px solid $vermelho;
+          border-radius: 15px;
+          svg {
+            circle {
+              fill: $vermelho
+            }
+            path {
+              fill: white;
+            }
+          }
+        }
+        h2 {
+          padding: 30px 0 22px 0;
+        }
+      }
+    }
+    .seta-vantagens {
+      position: absolute;
+    }
+  }
+}

@@ -138,8 +138,29 @@
         spaceBetween: 30,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
         spaceBetween: 30,
+      }
+    },
+  });
+
+  var swiper4 = new Swiper(".mySwiper-vantagens", {
+    loop: true,
+    navigation: {
+      nextEl: ".vantagens-button-next",
+      prevEl: ".vantagens-button-prev",
+    },
+    pagination: {
+      el: ".vantagens-pagination",
+    },
+    breakpoints: {
+      579: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 40,
       }
     },
   });
@@ -153,6 +174,14 @@
       $('.links-nav-mobile').slideToggle();
       $('body').toggleClass('overflow-hidden');
     });
+
+    $('.item-vantagem').on('click', function(){
+      $(this).toggleClass('selecionado');
+    });
+
+    // $('.link-vantagens').on('click', function(){
+    //   $(this).toggleClass('slide-selecionado');
+    // });
 
     $('.dropdown-nav-mobile').on('click', function() {
       $(this).find('.links-dropdown-mobile').slideToggle();

@@ -1,0 +1,15 @@
+.conheca {
+  background-color: $roxo-escuro;
+  height: 725px;
+  .container-conheca, .row{
+    height: 100%;
+  }
+  .parte-texto {
+    background-image: url(assets/images/leao.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    .texto-conheca {
+      text-align: left;
+    }
+  }
+}
