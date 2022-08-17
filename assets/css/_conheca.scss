@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  transition: all 1s ease-in-out;
+  &.leao-lado {
+    background-position: left;
+  }
   .container-conheca {
     height: 100%;
     .divisao {
@@ -14,6 +18,7 @@
     .parte-texto {
       width: 50%;
       height: 100%;
+      transition: all 0.5s ease-in-out;
       .texto-conheca {
         text-align: left;
         .botao-vermelho {
@@ -22,6 +27,7 @@
       }
     }
     .parte-swiper {
+      transition: all 1s ease-in-out;
       height: 100%;
       width: 50%;
       background-image: url(assets/images/leao-realista.png);
@@ -30,15 +36,23 @@
       border-left: 2px solid $vermelho;
       position: relative;
       transform: translateX(60%);
+      &.swiper-aberto {
+        transform: translateX(10%);
+        width: 100% !important;
+        transition: all 1s ease-in-out;
+      }
       .mais {
         position: absolute;
         top: 50%;
         left: -37px;
         z-index: 10;
         cursor: pointer;
-        transition: all 1s ease-in-out;
         gap: 15px;
+        img {
+          transition: all 1s ease-in-out;
+        }
         .palavra {
+          transition: all 1s ease-in-out;
           p {
             margin: 0;
           }
@@ -61,10 +75,13 @@
         }
       }
       .container-swiper {
-        height: 100%;
         .mySwiper-conheca {
-          height: 334px;
+          margin: 0 124px;
+          h1 {
+            padding-bottom: 26px;
+          }
           .swiper-slide {
+            height: 334px;
             overflow: hidden;
             background: rgba(255, 255, 255, 0.7);
             width: 412px !important;
@@ -79,6 +96,16 @@
               color: #575656;
               padding: 40px;
               text-align: left;
+            }
+          }
+          .setas-conheca {
+            gap: 30px;
+            padding-top: 35px;
+            .conheca-button-prev {
+              transform: rotate(90deg);
+            }
+            .conheca-button-next {
+              transform: rotate(-90deg);
             }
           }
         }

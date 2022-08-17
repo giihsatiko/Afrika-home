@@ -111,10 +111,10 @@
           </a>
         </div>
       </div>
-      <div class="parte-swiper">
-        <div class="container-swiper d-flex flex-column justify-content-center d-none">
-          <h1 class="fw-700 fs-64 white">DIFERENCIAIS</h1>
+      <div class="parte-swiper d-flex align-items-center">
+        <div class="container-swiper d-none">
           <div class="swiper mySwiper-conheca">
+            <h1 class="fw-700 fs-64 white">DIFERENCIAIS</h1>
             <div class="swiper-wrapper">
               <?php for ($i = 0; $i < 5; $i++) : ?>
                 <div class="swiper-slide">
@@ -126,21 +126,15 @@
                 </div>
               <?php endfor; ?>
             </div>
-            <div class="container-fluid itens-swiper-conheca">
+            <div class="itens-swiper-conheca">
               <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="conheca-pagination"></div>
-                <a href="#conteudo" class="scroll-down fw-400 fs-13 d-flex justify-content-between align-items-center">
-                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
-                  </svg>
-                  SCROLL DOWN
-                </a>
                 <div class="setas-conheca d-flex justify-content-between align-items-center">
                   <div class="conheca-button-prev">
                     <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
                     </svg>
                   </div>
+                  <div class="conheca-pagination"></div>
                   <div class="conheca-button-next">
                     <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />

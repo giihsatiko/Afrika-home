@@ -166,7 +166,7 @@
   });
 
   var swiper5 = new Swiper(".mySwiper-conheca", {
-    loop: true,
+    // loop: true,
     navigation: {
       nextEl: ".conheca-button-next",
       prevEl: ".conheca-button-prev",
@@ -180,7 +180,7 @@
         spaceBetween: 30,
       },
       768: {
-        slidesPerView: 2.3,
+        slidesPerView: 2.5,
         spaceBetween: 15,
       }
     },
@@ -201,7 +201,11 @@
     });
 
     $('.mais').on('click', function() {
+      $(this).parents('.divisao').find('.parte-texto').toggleClass('invisible');
       $(this).toggleClass('abrido');
+      $(this).parent().toggleClass('swiper-aberto');
+      $(this).parent().find('.container-swiper').toggleClass('d-none');
+      $(this).parents('.conheca').toggleClass('leao-lado');
     });
 
     $('.dropdown-nav-mobile').on('click', function() {
