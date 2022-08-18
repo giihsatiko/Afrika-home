@@ -117,6 +117,10 @@
 
   var swiper2 = new Swiper(".mySwiper-empresas", {
     breakpoints: {
+      320: {
+        slidesPerView: 2.2,
+        spaceBetween: 18,
+      },
       579: {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -133,6 +137,10 @@
       el: ".conteudos-pagination",
     },
     breakpoints: {
+      320: {
+        slidesPerView: 1.1,
+        spaceBetween: 20,
+      },
       576: {
         slidesPerView: 2.5,
         spaceBetween: 30,
@@ -179,6 +187,10 @@
       el: ".conheca-pagination",
     },
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
       579: {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -205,7 +217,12 @@
     });
 
     $('.mais').on('click', function() {
-      $(this).parents('.divisao').find('.parte-texto').toggleClass('invisible');
+      // if (window.innerWidth >= 575) {
+      //   $(this).parents('.divisao').find('.parte-texto').toggleClass('invisible');
+      //   $(this).parents('.divisao').find('.parte-swiper').children('.container-swiper').toggleClass('swiper-aberto');
+      //   $(this).parents('.divisao').find('.parte-swiper').children('.container-swiper').toggleClass('d-none');
+      //   $(this).parents('.conheca').toggleClass('leao-lado');
+      // }
       $(this).toggleClass('abrido');
       $(this).parent().toggleClass('swiper-aberto');
       $(this).parent().find('.container-swiper').toggleClass('d-none');

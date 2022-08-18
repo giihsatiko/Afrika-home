@@ -7,6 +7,40 @@
   background-position: center;
   overflow: hidden;
   transition: all 1s ease-in-out;
+  .mais {
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: -37px;
+    z-index: 5;
+    cursor: pointer;
+    gap: 15px;
+    img {
+      transition: all 1s ease-in-out;
+    }
+    .palavra {
+      transition: all 1s ease-in-out;
+      p {
+        margin: 0;
+      }
+      .voltar {
+        display: none;
+      }
+    }
+    &.abrido {
+      img {
+        transform: rotate(45deg);
+      }
+      .palavra {
+        .diferenciais {
+          display: none !important;
+        }
+        .voltar {
+          display: block !important;
+        }
+      }
+    }
+  }
   &.leao-lado {
     background-position: left;
   }
@@ -42,39 +76,7 @@
         width: 100% !important;
         transition: all 1s ease-in-out;
       }
-      .mais {
-        position: absolute;
-        top: 50%;
-        left: -37px;
-        z-index: 10;
-        cursor: pointer;
-        gap: 15px;
-        img {
-          transition: all 1s ease-in-out;
-        }
-        .palavra {
-          transition: all 1s ease-in-out;
-          p {
-            margin: 0;
-          }
-          .voltar {
-            display: none;
-          }
-        }
-        &.abrido {
-          img {
-            transform: rotate(45deg);
-          }
-          .palavra {
-            .diferenciais {
-              display: none !important;
-            }
-            .voltar {
-              display: block !important;
-            }
-          }
-        }
-      }
+      
       .container-swiper {
         .mySwiper-conheca {
           margin: 0 124px;

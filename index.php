@@ -4,12 +4,12 @@
     <div class="swiper-wrapper">
       <?php for ($i = 0; $i < 5; $i++) : ?>
         <div class="swiper-slide">
-          <div class="banner-img d-flex align-items-center justify-content-start">
+          <div class="banner-img d-flex align-items-start align-md-center justify-content-start">
             <div class="container-md container-fluid">
               <div class="texto-banner">
                 <h1 class="fw-700 fs-64">Cibersegurança</h1>
                 <p class="fw-400 fs-22">A Infraestrutura da sua empresa precisa ser segura e eficiente, conheça nossas soluções</p>
-                <div class="links-banner d-flex justify-content-between align-items-center">
+                <div class="links-banner d-flex flex-column flex-md-row justify-content-between align-items-center">
                   <a href="#" class="botao-vermelho ">QUERO CONHECER<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
                     </svg>
@@ -23,8 +23,8 @@
       <?php endfor; ?>
     </div>
     <div class="container-fluid itens-swiper-banner ">
-      <div class="d-flex justify-content-between align-items-center w-100">
-        <div class="banner-pagination"></div>
+      <div class="d-flex flex-column-reverse flex-md-row justify-content-between align-items-center w-100">
+        <div class="banner-pagination d-none d-md-block"></div>
         <a href="#conteudo" class="scroll-down fw-400 fs-13 d-flex justify-content-between align-items-center">
           <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
@@ -44,7 +44,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-lg-5">
-        <div class="lista-vantagens fw-400 fs-22 white d-flex flex-row flex-lg-column">
+        <div class="lista-vantagens fw-400 fs-22 white d-flex flex-column flex-sm-row flex-lg-column">
           <a class="d-block item-vantagem">Soluções</a>
           <a class="d-block item-vantagem">Proteção de dados</a>
           <a class="d-block item-vantagem">Consultoria</a>
@@ -98,8 +98,8 @@
 </main>
 <section class="conheca d-flex align-items-center">
   <div class="container-conheca">
-    <div class="divisao d-flex align-items-center justify-content-between">
-      <div class="parte-texto d-none d-md-block container-lg container-fluid">
+    <div class="divisao d-flex flex-column flex-sm-row align-items-center justify-content-between">
+      <div class="parte-texto d-flex container-lg container-fluid">
         <div class="d-flex align-items-center">
           <div class="texto-conheca white">
             <h1 class="fw-700 fs-48">Nossa experiência de mercado supera 20 anos
@@ -113,10 +113,17 @@
             </a>
           </div>
         </div>
+        <div class="mais d-flex d-sm-none flex-column flex-sm-row align-items-center">
+          <img src="assets/images/mais.png" alt="cruz">
+          <div class="palavra fw-400 fs-24 white">
+            <p class="diferenciais">DIFERENCIAIS</p>
+            <p class="voltar">VOLTAR</p>
+          </div>
+        </div>
       </div>
 
       <div class="parte-swiper d-flex align-items-center">
-        <div class="container-swiper d-block d-md-none">
+        <div class="container-swiper d-block d-sm-none">
           <div class="swiper mySwiper-conheca">
             <h1 class="fw-700 fs-64 white">DIFERENCIAIS</h1>
             <div class="swiper-wrapper">
@@ -134,22 +141,32 @@
               <div class="d-flex justify-content-between align-items-center w-100">
                 <div class="setas-conheca d-flex justify-content-between align-items-center">
                   <div class="conheca-button-prev">
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-sm-block">
                       <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
                     </svg>
+                    <svg width="40" height="40" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-sm-none">
+                      <rect x="69" y="1" width="68" height="68" rx="34" transform="rotate(90 69 1)" stroke="#FF3136" stroke-width="2" fill="#FF3136" />
+                      <path d="M42 31L35 38L28 31" stroke="#FFFF" stroke-width="3" />
+                    </svg>
+
                   </div>
-                  <div class="conheca-pagination"></div>
+                  <div class="conheca-pagination d-none d-sm-block"></div>
                   <div class="conheca-button-next">
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-sm-block">
                       <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
                     </svg>
+                    <svg width="40" height="40" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-sm-none">
+                      <rect x="69" y="1" width="68" height="68" rx="34" transform="rotate(90 69 1)" stroke="#FF3136" stroke-width="2" fill="#FF3136" />
+                      <path d="M42 31L35 38L28 31" stroke="#FFFF" stroke-width="3" />
+                    </svg>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="mais d-none d-md-flex align-items-center">
+        <div class="mais d-none d-sm-flex flex-column flex-sm-row align-items-center">
           <img src="assets/images/mais.png" alt="cruz">
           <div class="palavra fw-400 fs-24 white">
             <p class="diferenciais">DIFERENCIAIS</p>
@@ -242,7 +259,7 @@
 </section>
 <section class="conteudos d-flex flex-column justify-content-center">
   <div class="container-fluid">
-    <div class="titulo-conteudos d-flex align-items-center justify-content-between w-100">
+    <div class="titulo-conteudos d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
       <h1 class="fw-700 fs-64 white">CONTEÚDOS</h1>
       <div class="seletor-conteudo">
         <select id="conteudos" class="d-flex align-items-center">

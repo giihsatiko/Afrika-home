@@ -1,17 +1,16 @@
-@import 'base/normalize';
-@import 'base/variaveis';
-@import 'base/tipografia';
-@import 'base/base';
-@import 'base/swiper';
-@import 'header';
-@import 'footer';
-@import 'banner';
-@import 'vantagens';
-@import 'conheca';
-@import 'empresas';
-@import 'fale-conosco';
-@import 'conteudos';
-
+@import "base/normalize";
+@import "base/variaveis";
+@import "base/tipografia";
+@import "base/base";
+@import "base/swiper";
+@import "header";
+@import "footer";
+@import "banner";
+@import "vantagens";
+@import "conheca";
+@import "empresas";
+@import "fale-conosco";
+@import "conteudos";
 
 .botao-vermelho {
   background-color: $vermelho;
@@ -23,6 +22,7 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   gap: 15px;
@@ -44,6 +44,7 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   gap: 15px;
@@ -62,7 +63,7 @@
   white-space: nowrap;
 }
 
-@media(max-width: 991.9px) {
+@media (max-width: 991.9px) {
   // banner
   .divisao-botoes {
     width: 46px !important;
@@ -78,7 +79,7 @@
   }
 }
 
-@media(max-width: 767.9px) {
+@media (max-width: 767.9px) {
   // conheca
   .parte-swiper {
     width: 100% !important;
@@ -87,6 +88,140 @@
     transform: translateX(0%) !important;
     .mySwiper-conheca {
       margin: 0 20px !important;
+    }
+  }
+}
+
+@media (max-width: 575.9px) {
+  .botao-vermelho, .botao-vermelho-nobg {
+    min-width: 290px;
+  }
+  // banner
+  .banner-img {
+    background-position: unset;
+  }
+  .texto-banner {
+    width: 100% !important;
+    h1 {
+      font-size: 36px;
+    }
+    .links-banner {
+      gap: 20px;
+      .botao-vermelho {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  .setas-banner {
+    padding-bottom: 35px;
+  }
+  // conheca
+  .conheca {
+    height: fit-content !important;
+  }
+  .parte-texto {
+    width: 100% !important;
+    border-bottom: 2px solid $vermelho;
+    .texto-conheca {
+      h1 {
+        text-align: center;
+        font-size: 36px;
+      }
+      padding-bottom: 150px;
+    }
+  }
+  .parte-swiper {
+    height: 664px !important;
+    width: 100% !important;
+    border-left: none !important;
+    border-bottom: 2px solid $vermelho;
+    transform: translateX(0%) !important;
+    // transform: translate(0%, 0%) !important;
+    // &.swiper-aberto {
+    //   transform: translateY(0%) !important;
+    // }
+    .container-swiper {
+      padding: 0 15px;
+      .swiper {
+        overflow: visible !important;
+      }
+    }
+    .mySwiper-conheca {
+      margin: 0 !important;
+      h1 {
+        font-size: 36px;
+      }
+      .itens-swiper-conheca {
+        position: absolute;
+        top: 50%;
+        left: -6px;
+        z-index: 5;
+        width: 100%;
+        .setas-conheca {
+          width: 19%;
+        }
+      }
+      .swiper-slide {
+        max-width: 290px !important;
+        .conheca-item {
+          h3 {
+            width: 63%;
+          }
+        }
+      }
+    }
+    .mais {
+      top: unset;
+      bottom: -75px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
+  }
+  // vantagens
+  .vantagens {
+    height: fit-content;
+  }
+  .link-vantagens {
+    border: 2px solid #4e2379 !important;
+    border-radius: 15px;
+  }
+  // conteudos
+  .titulo-conteudos {
+    h1 {
+      font-size: 36px;
+    }
+  }
+  // fale conosco
+  .texto-fale-conosco {
+    width: 100% !important;
+    h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .botoes-fale-conosco {
+      .botao-vermelho, .botao-vermelho-nobg {
+        padding: 25px 30px !important;
+      }
+    }
+  }
+
+  // empresas 
+  .texto-empresas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      width: 100% !important;
+    text-align: center;
+    }
+    .botao-vermelho {
+      padding: 25px 35px !important;
     }
   }
 }

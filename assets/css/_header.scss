@@ -1,8 +1,9 @@
 header {
   background: linear-gradient(270deg, #4e2379 0%, #280f44 100%), #c4c4c4;
   height: 90px;
+  z-index: 10;
   .links-nav {
-    z-index: 10;
+    z-index: 30;
     .dropdown-nav {
       cursor: pointer;
       transition: all 0.8s ease-in-out;
@@ -94,7 +95,7 @@ header {
 
 @media (max-width: 991.9px) {
   .menu-logo {
-    z-index: 5000;
+    z-index: 30;
     background: linear-gradient(270deg, #4e2379 0%, #280f44 100%), #c4c4c4;
     box-shadow: 0px 4px 200px rgba(78, 35, 121, 0.2);
     height: 90px;
