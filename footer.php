@@ -178,7 +178,6 @@
   });
 
   var swiper5 = new Swiper(".mySwiper-conheca", {
-    // loop: true,
     navigation: {
       nextEl: ".conheca-button-next",
       prevEl: ".conheca-button-prev",
@@ -189,7 +188,6 @@
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 30,
       },
       579: {
         slidesPerView: 3,
@@ -217,16 +215,13 @@
     });
 
     $('.mais').on('click', function() {
-      // if (window.innerWidth >= 575) {
-      //   $(this).parents('.divisao').find('.parte-texto').toggleClass('invisible');
-      //   $(this).parents('.divisao').find('.parte-swiper').children('.container-swiper').toggleClass('swiper-aberto');
-      //   $(this).parents('.divisao').find('.parte-swiper').children('.container-swiper').toggleClass('d-none');
-      //   $(this).parents('.conheca').toggleClass('leao-lado');
-      // }
-      $(this).toggleClass('abrido');
-      $(this).parent().toggleClass('swiper-aberto');
-      $(this).parent().find('.container-swiper').toggleClass('d-none');
-      $(this).parents('.conheca').toggleClass('leao-lado');
+      if (window.innerWidth >= 575) {
+        $(this).toggleClass('abrido');
+        $(this).parent().toggleClass('swiper-aberto');
+        $(this).parent().find('.container-swiper').toggleClass('d-sm-none');
+        $(this).parents('.conheca').toggleClass('leao-lado');
+        $(this).parents('.divisao').find('.parte-texto').toggleClass('invisible');
+      }
     });
 
     $('.dropdown-nav-mobile').on('click', function() {

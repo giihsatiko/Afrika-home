@@ -7,6 +7,9 @@ footer {
       a {
         color: white;
         display: block;
+        &:hover {
+          color: $vermelho;
+        }
       }
       .titulo-footer {
         gap: 25px;
@@ -23,6 +26,14 @@ footer {
           width: 19px;
           height: 2px;
           display: block;
+        }
+        &:hover {
+          a {
+            color: $vermelho;
+          }
+          span {
+            background-color: $vermelho;
+          }
         }
       }
     }

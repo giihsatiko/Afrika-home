@@ -9,7 +9,7 @@
               <div class="texto-banner">
                 <h1 class="fw-700 fs-64">Cibersegurança</h1>
                 <p class="fw-400 fs-22">A Infraestrutura da sua empresa precisa ser segura e eficiente, conheça nossas soluções</p>
-                <div class="links-banner d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="links-banner d-flex flex-column flex-sm-row justify-content-between align-items-center">
                   <a href="#" class="botao-vermelho ">QUERO CONHECER<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
                     </svg>
@@ -44,7 +44,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-lg-5">
-        <div class="lista-vantagens fw-400 fs-22 white d-flex flex-column flex-sm-row flex-lg-column">
+        <div class="lista-vantagens fw-400 fs-22 white d-flex flex-column flex-sm-row flex-lg-column justify-content-center">
           <a class="d-block item-vantagem">Soluções</a>
           <a class="d-block item-vantagem">Proteção de dados</a>
           <a class="d-block item-vantagem">Consultoria</a>
@@ -113,13 +113,6 @@
             </a>
           </div>
         </div>
-        <div class="mais d-flex d-sm-none flex-column flex-sm-row align-items-center">
-          <img src="assets/images/mais.png" alt="cruz">
-          <div class="palavra fw-400 fs-24 white">
-            <p class="diferenciais">DIFERENCIAIS</p>
-            <p class="voltar">VOLTAR</p>
-          </div>
-        </div>
       </div>
 
       <div class="parte-swiper d-flex align-items-center">
@@ -166,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="mais d-none d-sm-flex flex-column flex-sm-row align-items-center">
+        <div class="mais d-flex flex-column flex-sm-row align-items-center">
           <img src="assets/images/mais.png" alt="cruz">
           <div class="palavra fw-400 fs-24 white">
             <p class="diferenciais">DIFERENCIAIS</p>
@@ -281,7 +274,7 @@
           </div>
         <?php endfor; ?>
       </div>
-      <div class="paginacao-conteudo d-flex align-items-center">
+      <div class="paginacao-conteudo d-flex align-items-center justify-content-between">
         <div class="conteudos-pagination"></div>
         <a href="#" class="block link-blog fw-500 fs-16">VER TODAS DO BLOG</a>
       </div>

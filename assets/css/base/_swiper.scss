@@ -34,18 +34,17 @@
   width: fit-content;
   display: flex;
   gap: 45px;
+  transition: all 1s ease-in-out;
   .swiper-pagination-bullet {
     border: 1px solid #FFFFFF;
     border-radius: 0%;
     height: 5px;
     width: 5px;
-    opacity: 1;
   }
   .swiper-pagination-bullet-active {
     background: white;
     border-radius: 0%;
     height: 5px;
     width: 41px;
-    opacity: 1;
   }
 }
