@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header class="d-flex align-items-center" id="#topo">
+  <header class="d-flex align-items-center" id="topo">
     <div class="container-fluid">
       <div class="itens-nav d-flex justify-content-between align-items-center">
         <div class="menu-logo d-flex justify-content-between align-items-center w-100">

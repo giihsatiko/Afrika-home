@@ -12,6 +12,9 @@
       }
     }
   }
+  .container-swiper-vantagens {
+    height: 100%;
+  }
   .mySwiper-vantagens {
     .swiper-slide {
       background-color: $roxo-escuro;
@@ -38,8 +41,19 @@
         }
       }
     }
-    .seta-vantagens {
-      position: absolute;
+    .setas-vantagens {
+      // position: absolute;
+      gap: 30px;
+      // width: 184px;
+      .swiper-pagination-bullets {
+        gap: 30px;
+      }
+      .vantagens-button-prev {
+        transform: rotate(90deg);
+      }
+      .vantagens-button-next {
+        transform: rotate(-90deg);
+      }
     }
   }
 }

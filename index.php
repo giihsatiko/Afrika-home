@@ -23,8 +23,8 @@
       <?php endfor; ?>
     </div>
     <div class="container-fluid itens-swiper-banner ">
-      <div class="d-flex flex-column-reverse flex-md-row justify-content-between align-items-center w-100">
-        <div class="banner-pagination d-none d-md-block"></div>
+      <div class="d-flex flex-column-reverse flex-sm-row justify-content-between align-items-center w-100">
+        <div class="banner-pagination d-none d-sm-block"></div>
         <a href="#conteudo" class="scroll-down fw-400 fs-13 d-flex justify-content-between align-items-center">
           <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
@@ -43,8 +43,8 @@
 <main class="vantagens d-flex align-items-center" id="conteudo">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-lg-5">
-        <div class="lista-vantagens fw-400 fs-22 white d-flex flex-column flex-sm-row flex-lg-column justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="lista-vantagens fw-400 fs-22 white d-flex flex-column flex-sm-row flex-md-column justify-content-center">
           <a class="d-block item-vantagem">Soluções</a>
           <a class="d-block item-vantagem">Proteção de dados</a>
           <a class="d-block item-vantagem">Consultoria</a>
@@ -52,7 +52,7 @@
           <a class="d-md-none d-block item-vantagem">Gestão</a>
         </div>
       </div>
-      <div class=" col-12 col-lg-7">
+      <div class="container-swiper-vantagens col-12 col-md-8">
         <div class="swiper mySwiper-vantagens">
           <div class="swiper-wrapper">
             <?php for ($i = 0; $i < 5; $i++) : ?>
@@ -69,26 +69,21 @@
             <?php endfor; ?>
           </div>
           <div class="container-fluid itens-swiper-vantagens">
-            <div class="d-flex justify-content-between align-items-center w-100">
-              <div class="vantagens-pagination"></div>
-              <a href="#conteudo" class="scroll-down fw-400 fs-13 d-flex justify-content-between align-items-center">
-                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
-                </svg>
-                SCROLL DOWN
-              </a>
+            <div class="d-flex justify-content-between align-items-center flex-sm-row flex-column w-100">
               <div class="setas-vantagens d-flex justify-content-between align-items-center">
                 <div class="vantagens-button-prev">
                   <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
                   </svg>
                 </div>
+                <div class="vantagens-pagination d-none d-sm-block"></div>
                 <div class="vantagens-button-next">
                   <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 2L9 9L2 2" stroke="#E5E5E5" stroke-width="3" />
                   </svg>
                 </div>
               </div>
+              <a href="#" class="link-blog">+ PROTEÇÃO DE DADOS</a>
             </div>
           </div>
         </div>
@@ -252,7 +247,7 @@
 </section>
 <section class="conteudos d-flex flex-column justify-content-center">
   <div class="container-fluid">
-    <div class="titulo-conteudos d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
+    <div class="titulo-conteudos d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
       <h1 class="fw-700 fs-64 white">CONTEÚDOS</h1>
       <div class="seletor-conteudo">
         <select id="conteudos" class="d-flex align-items-center">

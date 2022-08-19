@@ -31,6 +31,7 @@
   }
   &:hover {
     color: white;
+    background-color: #ff1b20;
   }
 }
 
@@ -52,7 +53,13 @@
     transform: rotate(-90deg);
   }
   &:hover {
-    color: $vermelho;
+    background-color: $vermelho;
+    color: white;
+    svg {
+      path {
+        stroke: white;
+      }
+    }
   }
 }
 
@@ -107,6 +114,7 @@
     padding: 50px 0;
   }
   .texto-banner {
+    padding: 0 !important;
     width: 100% !important;
     h1 {
       font-size: 36px;
@@ -207,6 +215,16 @@
   .link-vantagens {
     border: 2px solid #4e2379 !important;
     border-radius: 15px;
+  }
+  .itens-swiper-vantagens {
+    padding-top: 44px;
+  }
+  .setas-vantagens {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    left: 0;
+    width: 100%;
   }
   // conteudos
   .titulo-conteudos {
